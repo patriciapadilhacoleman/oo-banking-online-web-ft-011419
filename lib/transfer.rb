@@ -37,28 +37,24 @@ attr_accessor :sender, :status, :amount, :receiver
      @status = "rejected"
      
    
-   end
-     
-     
-  if @status != "pending"
+   elsif @status != "pending"
     
   
      @status = "rejected"
    
    
-   end
-   
-  if sender.balance < @amount
+   elsif sender.balance < @amount
     
 
       @status = "rejected"
      
-  end
+   else
   
-
-  sender.balance -= @amount
-  receiver.balance += @amount
-  @status = "complete"
+     sender.balance -= @amount
+     receiver.balance += @amount
+     @status = "complete"
+     
+   end
   
  end
  
