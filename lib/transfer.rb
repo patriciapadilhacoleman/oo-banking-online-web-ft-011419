@@ -35,7 +35,7 @@ attr_accessor :sender, :status, :amount, :receiver
      
   
      @status = "rejected"
-     return
+     
    
    end
      
@@ -44,7 +44,7 @@ attr_accessor :sender, :status, :amount, :receiver
     
   
      @status = "rejected"
-     return
+   
    
    end
    
@@ -52,7 +52,7 @@ attr_accessor :sender, :status, :amount, :receiver
     
 
       @status = "rejected"
-      return
+     
   end
   
 
